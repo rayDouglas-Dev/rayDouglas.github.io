@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varta:wght@300..700&display=swap');
+
+:root {
+
+--lavender: #eae8ffff;
+--alabaster-grey: rgb(210, 208, 211);
+--pale-slate: #adacb5ff;
+--icy-blue: #b0d7ffff;
+--ultrasonic-blue: #2626dcff;
+--text: #000000ff;
+
+}
+
+body {
+    background-color: var(--lavender);
+    color: var(--text);
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--ultrasonic-blue);
+    padding: 20px;
+    text-align: center;
+    font-family: "Varta", sans-serif;
+    margin: auto;
+    height: 580px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.301);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right, #fff, var(--pale-slate));
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+nav a:hover {
+    color: var(--lavender);
+}
+
+.frame-1 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.frame-1 .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--alabaster-grey);
+}
+.name {
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(202, 201, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name {
+  letter-spacing: 0.04em;
+}
+
+.cursor{
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background: currentColor;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.text-1 > .name{
+    font-size: 1.75em;
+    font-weight: 900;
+}
+
+.midia {
+    position: relative;
+    bottom: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 350px;
+}
+
+.midia ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+.midia ul li a img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s;
+}
+
+.midia ul li a img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+
+.frame-1 > .imagem {
+    display: flex;
+    justify-content: start  ;
+    align-items: center;
+    width: 505px;
+    height: auto;
+    
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;  
+    margin: auto;
+}
+
+#sobre, #especialidades, #contato, #formacao, #projetos{
+    margin-bottom: 40px;
+
+}
+
+#sobre h2, #especialidades h2, #contato h2, #formacao h2, #projetos h2{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+#sobre p, #especialidades ul, #contato p, #formacao ul, #projetos h3, #projetos p{
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: var(--text);
+    text-align: justify;
+}
+
+
+#formacao ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+#formacao ul li {
+    width: 100%;
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#projetos a {
+    color: black;
+}
+
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: currentColor;
+  margin-left: 1px;
+  vertical-align: middle;
+  animation: blink 0.7s steps(1) infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+
+footer {
+    background-color: var(--alabaster-grey);
+    padding: 20px;
+    top: 0;
+    text-align: center;
+    font-family: "Varta", sans-serif;
+    margin: auto;
+    height: auto;
+}
+
+
