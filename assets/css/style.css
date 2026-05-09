@@ -174,6 +174,10 @@ nav a:hover {
     
 }
 
+.frame-1 > .imagem > img {
+    width: 310px;
+}
+
 main {
     padding: 20px;
     max-width: 1200px;  
@@ -249,6 +253,102 @@ footer {
     font-family: "Varta", sans-serif;
     margin: auto;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .frame-1 {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        
+    }
+
+    .frame-1 > .text {
+        position: relative;
+        top: -140px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .frame-1 > .text > .midia{
+        display: none;
+    }
+
+    .text-1 > p {
+        font-size: 0.75em;
+    }
+
+    .text-1 > .name {
+        font-size: 1em;
+    }
+    
+
+    .midia {
+        width: 100%;
+    }
+
+    .midia ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .midia ul li a img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .frame-1 > .imagem {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frame-1 > .imagem > img{
+        width: 250px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    #sobre h2, #especialidades h2, #contato h2, #formacao h2, #projetos h2 {
+        font-size: 1.75em;
+    }
+
+    #sobre p, #especialidades ul, #contato p, #formacao ul, #projetos h3, #projetos p {
+        font-size: 1em;
+    }
+
+    #formacao ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 
