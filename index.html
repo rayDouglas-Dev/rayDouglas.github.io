@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ray Douglas | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Varta:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    
 </head>
 <body>
     <header>
@@ -22,12 +24,14 @@
             <div class="text">
                 <div class="text-1">
                     <p class="name">Ray Douglas Barreto de Oliveira</p>
-                    <p>Graduando em Análise e Desenvolvimento de Sistemas</p>
+                </div>
+                <div class="text-2">
+                    <p class="nome-2">Graduando em Análise e Desenvolvimento de Sistemas</p>
                 </div>
                 <div class="midia">
                     <ul>
                         <li><a href="https://www.linkedin.com/in/ray-douglas-oliveira-crcz/" target="_blank" rel="noopener noreferrer"><img class="icon-linkedin" src="assets/icons/Linkedin.png" style="width: 45px; height: 45px; position: relative; top: 12px;"  alt=""></a></li>
-                        <li><a href="https://github.com/rayDouglas-Dev" target="_blank" rel="noopener noreferrer"><img src="assets/icons/github-branco.png" style="width: 45px; height: 45px; position: relative; top: 12px;" alt=""></a></li>
+                        <li><a href="https://github.com/rayDouglas-Dev" target="_blank" rel="noopener noreferrer"><img src="assets/icons/github.png" style="width: 45px; height: 45px; position: relative; top: 12px; right: -10px;" alt=""></a></li>
                         <li><a href="https://www.instagram.com/ray_douglas019/" target="_blank" rel="noopener noreferrer"><img src="assets/icons/Instagram-branco.png" alt=""></a></li>
                     </ul>
                 </div>
@@ -38,50 +42,203 @@
         </div>
     </header>
     <main>
-        <section id="sobre">
-                <h2>Sobre Mim</h2>
-                <p>Olá! Meu nome é Ray Douglas Barreto de Oliveira, tenho 20 anos de idade. Sou natural de Catolé do Rocha - PB.<br> Atuamentente, sou formado em Tecnico de Informatica pelo Instituto Federal da Paraíba (IFPB) e estou granduando Análise e Desenvolvimento de Sistema pelo Instituto Federal da Paraíba - Campus Cajazeiras.
-                </p>
-        </section>
-        <section id="especialidades">
-                <h2>Especialidades</h2>
-                <ul>
-                    <li>Desenvolvimento Web (HTML5, CSS3, JavaScript)</li>
-                    <li>Programação Orientada a Objetos (Java, Python)</li>
-                    <li>Banco de Dados (básico)</li>
-                    <li>Desenvolvimento com Django</li>
-                    <li>Inglês(Básico)</li>
-                </ul>
-        </section>
-        <section id="formacao">
-                <h2>Formação</h2>
-                <ul>
-                    <li><img src="assets/icons/ifpb.png" alt=""><p>Técnico em Informática - <strong>COMPLETO</strong></p></li>
-                    <li><img src="assets/icons/ifpb.png" alt=""><p>Graduando em Análise e Desenvolvimento de Sistemas - <strong>CURSANDO</strong></p></li>
-                </ul>
-        </section>
-        <section id="projetos">
-                <h2>Projetos</h2>
-                <div class="text">
-                    <h3>Projeto Escola</h3>
-                    <p>É um pequeno sistema escolar que consiste em cadastrar e matricular a alunos. Esse para fins de estudos sobre Programação orientada a objetos (POO). Código do projeto disponível no meu <a href="https://github.com/rayDouglas-Dev/projeto-escola">repositório do github</a>.
-                    </p>
+        <section id="sobre" class="section-light">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Apresentação</span>
+                    <h2>Sobre Mim</h2>
                 </div>
-
-                <div class="text">
-                    <h3>Projeto To-do-list</h3>
-                    <p>É um sistema gerencimento de tarefas para serem realizadas (to-do-list) e esse projeto foi realizado para estudos de framework backend com Django. Código do projeto disponível no meu <a href="https://github.com/rayDouglas-Dev/Tarefas">repositório do github</a>.
-                    </p>
+                <div class="content-intercalated sobre-content">
+                    <div class="sobre-card">
+                        <p class="sobre-highlight">
+                            Olá! Meu nome é <strong>Ray Douglas Barreto de Oliveira</strong>, tenho 20 anos de idade e sou natural de Catolé do Rocha - PB.
+                        </p>
+                        <p>
+                            Atualmente, sou formado em <strong>Técnico em Informática</strong> pelo Instituto Federal da Paraíba (Campus Catolé do Rocha) e estou graduando em <strong>Análise e Desenvolvimento de Sistemas</strong> pelo Instituto Federal da Paraíba (Campus Cajazeiras).
+                        </p>
+                        <div class="sobre-tags">
+                            <span class="tag-pill">IFPB</span>
+                            <span class="tag-pill">Desenvolvedor</span>
+                            <span class="tag-pill">Tecnologia</span>
+                        </div>
+                    </div>
                 </div>
-
+            </div>
         </section>
-        <section id="contato">
-                <h2>Contato</h2>
-                <p>Email: raydouglasoliveira9@gmail.com</p>
+
+        <section id="especialidades" class="section-dark">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Habilidades & Tecnologias</span>
+                    <h2>Especialidades</h2>
+                </div>
+                <div class="content-intercalated">
+                    <ul class="skills-grid">
+                        <li class="skill-card">
+                            <div class="skill-icon-wrap">🌐</div>
+                            <div class="skill-details">
+                                <h3>Front-end</h3>
+                                <p>HTML5, CSS3, JavaScript</p>
+                            </div>
+                        </li>
+                        <li class="skill-card">
+                            <div class="skill-icon-wrap">⚡</div>
+                            <div class="skill-details">
+                                <h3>Back-end</h3>
+                                <p>Python, Django</p>
+                            </div>
+                        </li>
+                        <li class="skill-card">
+                            <div class="skill-icon-wrap">🧩</div>
+                            <div class="skill-details">
+                                <h3>POO</h3>
+                                <p>Java, Python, C++</p>
+                            </div>
+                        </li>
+                        <li class="skill-card">
+                            <div class="skill-icon-wrap">🗄️</div>
+                            <div class="skill-details">
+                                <h3>Banco de Dados</h3>
+                                <p>MySQL (Básico)</p>
+                            </div>
+                        </li>
+                        <li class="skill-card">
+                            <div class="skill-icon-wrap">🌍</div>
+                            <div class="skill-details">
+                                <h3>Idiomas</h3>
+                                <p>Inglês (Básico)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="section-light">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Trajetória Acadêmica</span>
+                    <h2>Formação</h2>
+                </div>
+                <div class="content-intercalated">
+                    <ul class="formacao-grid">
+                        <li class="formacao-card">
+                            <div class="formacao-logo">
+                                <img src="assets/icons/ifpb.png" alt="IFPB">
+                            </div>
+                            <p>Técnico em Informática - <strong>COMPLETO</strong></p>
+                        </li>
+                        <li class="formacao-card">
+                            <div class="formacao-logo">
+                                <img src="assets/icons/ifpb.png" alt="IFPB">
+                            </div>
+                            <p>Graduando em Análise e Desenvolvimento de Sistemas - <strong>CURSANDO</strong></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section-dark">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Portfólio em Destaque</span>
+                    <h2>Projetos</h2>
+                </div>
+                <div class="projects-intercalated-container">
+                    <article class="project-item project-left">
+                        <div class="project-card">
+                            <div class="project-category">Orientação a Objetos</div>
+                            <h3>Projeto Escola</h3>
+                            <p>
+                                É um pequeno sistema escolar que consiste em cadastrar e matricular alunos. Desenvolvido para fins de estudos práticos e aprofundamento sobre Programação Orientada a Objetos (POO).
+                            </p>
+                            <div class="project-footer">
+                                <a href="https://github.com/rayDouglas-Dev/projeto-escola" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                    <span>Ver no GitHub</span>
+                                    <img src="assets/icons/github-branco.png" alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item project-right">
+                        <div class="project-card">
+                            <div class="project-category">Back-end / Web</div>
+                            <h3>Projeto To-do-list</h3>
+                            <p>
+                                É um sistema de gerenciamento de tarefas a serem realizadas (to-do-list). Desenvolvido para estudos do framework backend Django e implementação de regras de negócio.
+                            </p>
+                            <div class="project-footer">
+                                <a href="https://github.com/rayDouglas-Dev/Tarefas" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                    <span>Ver no GitHub</span>
+                                    <img src="assets/icons/github-branco.png" alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section-light">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Entre em Contato</span>
+                    <h2>Contato</h2>
+                </div>
+                <div class="content-intercalated contato-wrapper">
+                    <div class="contato-box">
+                        <div class="contato-icon-circle">✉️</div>
+                        <div class="contato-text-info">
+                            <span class="contato-sub">E-mail Profissional</span>
+                            <a href="mailto:raydouglasoliveira9@gmail.com" class="contato-email-link">raydouglasoliveira9@gmail.com</a>
+                        </div>
+                        <a href="mailto:raydouglasoliveira9@gmail.com" class="btn-action-contact">Enviar E-mail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="redes" class="section-dark">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Presença Online</span>
+                    <h2>Redes Sociais</h2>
+                </div>
+                <div class="midia-social-section">
+                    <ul class="social-cards-grid">
+                        <li>
+                            <a href="https://www.linkedin.com/in/ray-douglas-oliveira-crcz/" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                                <div class="social-icon-wrapper">
+                                    <img class="icon-linkedin" src="assets/icons/Linkedin.png" alt="LinkedIn">
+                                </div>
+                                <span class="social-name">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/rayDouglas-Dev" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                                <div class="social-icon-wrapper">
+                                    <img src="assets/icons/github.png" alt="GitHub">
+                                </div>
+                                <span class="social-name">GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ray_douglas019/" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                                <div class="social-icon-wrapper">
+                                    <img src="assets/icons/Instagram-branco.png" alt="Instagram">
+                                </div>
+                                <span class="social-name">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy;2026  Ray Douglas Barreto de Oliveira. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Ray Douglas Barreto de Oliveira. Todos os direitos reservados.</p>
     </footer>
     <script src="assets/js/js.js"></script>
 </body>
