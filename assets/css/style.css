@@ -6,6 +6,7 @@
     --blue-primary-hover: #1d4ed8;
     --blue-light: #60a5fa;
     --blue-sky: #38bdf8;
+    --blue-sky-light: #7dd3fc;
     --blue-glow: rgba(37, 99, 235, 0.25);
     --blue-glow-sky: rgba(56, 189, 248, 0.2);
 
@@ -276,7 +277,6 @@ nav a:hover {
     width: 320px;
     max-width: 100%;
     height: auto;
-    border-radius: var(--radius-full);
     filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.35));
     transition: var(--transition-smooth);
 }
@@ -401,6 +401,47 @@ main {
     box-shadow: var(--light-shadow-hover);
     transform: translateY(-2px);
 }
+/** ==========================================================================
+   Ícones estilo Windows / MacOS (para seções de destaque)
+   ========================================================================== */
+.icon-windows-macos {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+    margin-bottom: 18px;
+    
+}
+
+.icon-windows-macos > .icon1,
+.icon-windows-macos > .icon2,
+.icon-windows-macos > .icon3 {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.icon-windows-macos > .icon1 {
+    background-color: #f34444; 
+}
+.icon-windows-macos > .icon2 {
+    background-color: #e7bf2e; 
+}
+.icon-windows-macos > .icon3 {
+    background-color: #29b664; 
+}
+
+.icon-windows-macos > #icon1:hover {
+    background-color: #ff7878; 
+}
+.icon-windows-macos > #icon2:hover {
+    background-color: #ffd773; 
+}
+.icon-windows-macos > #icon3:hover {
+    background-color: #82e9ad; 
+}
 
 .sobre-highlight {
     font-size: 1.22em;
@@ -472,7 +513,6 @@ main {
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
     background: var(--dark-card-hover);
     border-color: var(--blue-sky);
     box-shadow: var(--dark-shadow-hover);
